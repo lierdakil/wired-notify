@@ -131,6 +131,7 @@ impl NotifyWindow {
                 y: 999_999.0,
             })
             .with_override_redirect(true)
+            .with_always_on_top(true)
             .build(el)
             .expect("Couldn't build winit window.");
 
